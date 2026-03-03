@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Notes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="body">
+    <div class="container">
+        <div class="header">
+            <input type="text" id="search" placeholder="🔍Search">
+            <button id="addbtn">+ Add</button>
+        </div>
+        <h1>Your Notes✍️</h1>
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">ALL</button>
+            <button class="filter-btn" data-filter="personal">PERSONAL</button>
+            <button class="filter-btn" data-filter="home">HOME</button>
+            <button class="filter-btn" data-filter="business">BUSINESS</button>
+        </div>
+        <div class="input-section">
+            <textarea id="noteInput" placeholder="Write your note..."></textarea>
+            <div class="category-box">
+            <p id="cat-text">Save as:</p>
+            <div class="category-select">
+  <button data-cat="personal" class="cat active">Personal</button>
+  <button data-cat="home" class="cat">Home</button>
+  <button data-cat="business" class="cat">Business</button>
+</div>
+</div>
+</div>
+       <div class="notes-container"></div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
